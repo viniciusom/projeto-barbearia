@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="caixa">
-            <h1><img src="_imagens/logo.png"></h1>
+            <h1><img src="_imagens/logo.png" alt="Logo da barbearia Alura"></h1>
 
             <nav>
                 <ul>
@@ -20,8 +20,72 @@
             </nav>
             </div>
         </header>
+        <main>
+            <form>
+
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato</legend>
+
+                    <label><input type="radio" name="contato" value="radio-email">Email</label>
+                    
+
+                    <label><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+
+                    <label><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Horário de Funcionamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
         <footer>
-            <img src="_imagens/logo-branco.png">
+            <img src="_imagens/logo-branco.png" alt="Rodape da barbearia Alura">
             <p class="copyright">&copy Copyright Barbearia Alura - 2020</p>
         </footer>
     </body>
